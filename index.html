@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnalisation des Onglets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo Centré -->
+    <header>
+        <img src="logo.png" alt="Logo Prekistara" class="logo">
+    </header>
+
+    <div class="container">
+        <h1>Personnalisez vos onglets</h1>
+        <p>Choisissez vos couleurs et enregistrez votre sélection.</p>
+
+        <!-- Zone contenant les SVG superposés -->
+        <div id="captureZone" class="svg-box">
+            <div id="svgContainer">
+                <div id="svgBackground"></div>
+                <div id="svgText"></div>
+            </div>
+        </div>
+
+        <!-- Sélecteurs de couleur stylisés -->
+        <div class="color-selection">
+            <h2>Choix des couleurs</h2>
+            
+            <div class="color-group">
+                <h3>Colonne 1</h3>
+                <label for="fond1">Fond</label>
+                <input type="color" id="fond1" value="#FFB6C1" class="heart-picker">
+                
+                <label for="textColor1">Texte</label>
+                <input type="color" id="textColor1" value="#000000" class="heart-picker">
+            </div>
+
+            <div class="color-group">
+                <h3>Colonne 2</h3>
+                <label for="fond2">Fond</label>
+                <input type="color" id="fond2" value="#D8BFD8" class="heart-picker">
+                
+                <label for="textColor2">Texte</label>
+                <input type="color" id="textColor2" value="#000000" class="heart-picker">
+            </div>
+
+            <div class="color-group">
+                <h3>Colonne 3</h3>
+                <label for="fond3">Fond</label>
+                <input type="color" id="fond3" value="#FF69B4" class="heart-picker">
+                
+                <label for="textColor3">Texte</label>
+                <input type="color" id="textColor3" value="#000000" class="heart-picker">
+            </div>
+        </div>
+
+        <!-- Bouton d'enregistrement -->
+        <button id="saveBtn">📸 Enregistrer mon choix</button>
+
+        <!-- Petit récap en bas -->
+        <div class="color-codes">
+            <p>🎨 <strong>Récapitulatif des couleurs :</strong></p>
+            <p id="codeFond1">Fond Colonne 1 : #FFB6C1</p>
+            <p id="codeFond2">Fond Colonne 2 : #D8BFD8</p>
+            <p id="codeFond3">Fond Colonne 3 : #FF69B4</p>
+            <p id="codeText1">Texte Colonne 1 : #000000</p>
+            <p id="codeText2">Texte Colonne 2 : #000000</p>
+            <p id="codeText3">Texte Colonne 3 : #000000</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
