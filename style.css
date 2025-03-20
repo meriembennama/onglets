@@ -28,8 +28,8 @@ body {
 /* 🎨 SVG - Réduction drastique */
 #svgContainer {
     position: relative;
-    width: 80%;
-    max-width: 180px;
+    width: 90%;
+    max-width: 200px;
     margin: auto;
 }
 
