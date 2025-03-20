@@ -10,9 +10,9 @@ body {
 
 /* 🖼️ Logo */
 .logo {
-    width: 70px;
+    width: 100px;
     display: block;
-    margin: 10px auto;
+    margin: 2px auto;
 }
 
 /* 📦 Conteneur principal */
@@ -29,7 +29,7 @@ body {
 #svgContainer {
     position: relative;
     width: 90%;
-    max-width: 200px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -112,8 +112,31 @@ body {
 
 /* 📱 Mobile friendly */
 @media (max-width: 500px) {
+
+    body{
+        font-size: 14px;
+
+    }
+
+    h1{
+        font-size: 16px;
+        color: #d35b8c;
+    }
+
+    h3{
+        font-size: 14px;
+        color: #9d4d7e;
+    }
+    h2{
+        font-size: 15px;
+        color: #d35b8c;
+    }
     .container {
-        width: 90%;
+        width: 80%;
+    }
+
+    p{
+        color: #9d4d7e;
     }
 
     .color-rows {
@@ -122,7 +145,7 @@ body {
     }
 
     #svgContainer {
-        width: 60%;
-        max-width: 140px;
+        width: 80%;
+        max-width: 540px;
     }
 }
